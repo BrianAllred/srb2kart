@@ -35,3 +35,15 @@ Note that if you're unable to join the server after adding an addon, make sure t
 In order to persist data through server shutdowns, bind the '/data' volume to a host directory.
 
 `docker run -d --name srb2kart -p 5029:5029/udp -v /path/on/host/data:/data brianallred/srb2kart`
+
+#### Getting listed on the Master Server list
+
+Pass `-room <id>` as a parameter after the image name, where `<id>` is either 33 for Standard or 28 for Casual.
+
+`docker run -d --name srb2kart -p 5029:5029/udp brianallred/srb2kart -room 33`
+
+#### Literally any other command line parameter
+
+Pass the parameter after the image name.
+
+`docker run -d --name srb2kart -p 5029:5029/udp brianallred/srb2kart -password 1234`
