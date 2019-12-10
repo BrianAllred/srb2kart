@@ -9,4 +9,5 @@ if [ -z "$ADDONS" ]; then
     exit
 fi
 
-/usr/games/SRB2Kart/srb2kart -dedicated -config kartserv.cfg -home /data "$@" -file "$ADDONS"
+# Intentional word splitting
+/usr/games/SRB2Kart/srb2kart -dedicated -config kartserv.cfg -home /data "$@" -file $ADDONS
