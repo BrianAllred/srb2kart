@@ -23,4 +23,4 @@ RUN chmod a+x /usr/bin/srb2kart.sh
 WORKDIR /usr/games/SRB2Kart
 
 # Run script
-ENTRYPOINT srb2kart.sh
+ENTRYPOINT ["srb2kart.sh"]
