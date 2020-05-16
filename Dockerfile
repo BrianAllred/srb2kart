@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:18.04
 
 # Install required software and srb2kart
 RUN apt update && apt install -y software-properties-common
