@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 # Install required software and srb2kart
-RUN apt update && apt install -y software-properties-common wget \
+RUN apt update && apt install -y software-properties-common \
     && add-apt-repository -y ppa:kartkrew/srb2kart && apt update && apt install -y srb2kart \
     && apt clean
     
